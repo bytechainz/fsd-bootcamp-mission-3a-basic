@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+    
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+   <header class="header">
+        <nav class="navbar">
+     <a href="./home.html">
+                    <img src="./images/icon/logo_mobile.png" alt="logo">
+                </a>
+        </nav>
+    </header>
+
+    <section class="main">  
+        <form action="" class="form-main">
+            <header>
+                <div class="text-primary-600">Pendaftaran Akun</div>
+                <p class="text-secondary-400">Yuk, daftarkan akunmu sekarang juga!</p>
+            </header>
+            <div class="form-input">
+                <div>
+                    <label for="full-name">Nama Lengkap <span>*</span></label>
+                    <input type="text" id="user-full-name" required>
+                </div>
+                <div>
+                    <label for="email">E-mail <span>*</span></label>
+                    <input type="email" id="user-email" required>
+                </div>
+                <div>
+                    <label for="gender">Jenis Kelamin <span>*</span></label>
+                     <select name="" id="user-gander" required>
+                        <option value="Pria">Pria</option>
+                        <option value="Wanita">Wanita</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="telp">No. Hp <span>*</span></label>
+                    <div class="user-telp">
+                        <div class="user-region">
+                            <div class="user-country">
+                                <img src="./images/indonesia.png" alt="" width="20px">
+                            </div>
+                            <select class="user-code-country">
+                                <option value="">+ 62</option>
+                            </select>
+                        </div>
+                        <input type="number" class="user-number">
+                    </div>
+                </div>
+                <div>
+                    <label for="password">Kata Sandi <span>*</span></label>
+                    <div class="pass">
+                        <input type="password" id="user-password" required>
+                        <div class="pass-eye">
+                            <img src="./images/icon/mdi_eye-off.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label for="repassword">Konfirmasi Kata Sandi <span>*</span></label>
+                    <div class="pass">
+                        <input type="password" id="user-repassword" required>
+                    <div class="pass-eye">
+                            <img src="./images/icon/mdi_eye-off.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-button">
+                <button type="submit" class="btn btn-secondary">Daftar</button>
+                <a href="./index.html" class="btn btn-primary">Masuk</a>
+                <div class="line">
+                    <hr><p>atau</p><hr>
+                </div>
+                <button class="btn">
+                    <img src="./images/icon/google_icon.png" alt="google-logo">
+                    <p>Masuk dengan Google</p>
+                </button>
+            </div>
+       </form>
+    </section>
+</body>
+</html>
